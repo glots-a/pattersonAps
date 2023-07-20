@@ -33,7 +33,7 @@ const FavoritesScreen = () => {
           width: '100%',
           height: undefined,
           marginBottom: 10,
-          marginTop: 40
+          marginTop: 40,
         }}
       />
     </View>

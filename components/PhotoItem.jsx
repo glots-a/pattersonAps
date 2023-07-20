@@ -1,20 +1,13 @@
-import React from 'react'
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-} from 'react-native';
+import React from 'react';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-
-
 
 const PhotoItem = ({ item, handleLike }) => (
   <View
     style={{
-      flexDirection: 'row', 
-      alignItems: 'center', 
-      marginVertical: 10
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginVertical: 10,
     }}
   >
     <Image
@@ -23,7 +16,7 @@ const PhotoItem = ({ item, handleLike }) => (
         width: 50,
         height: 50,
         marginRight: 10,
-        borderRadius: 3
+        borderRadius: 3,
       }}
     />
     <Text style={{ width: '70%', marginRight: 5 }}>{item.title}</Text>

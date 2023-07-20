@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  ActivityIndicator,
-} from 'react-native';
+import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { Input, Box } from 'native-base';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPhotos, likePhoto } from '../actions/photosActions';
@@ -29,7 +24,7 @@ const PhotosScreen = () => {
   );
 
   const isSomethingFound = Boolean(filteredPhotos.length);
-  
+
   return (
     <View
       style={{
@@ -49,11 +44,11 @@ const PhotosScreen = () => {
 
       {loading ? (
         <View
-          style={{ 
-          flex: 1, 
-          justifyContent: 'center', 
-          alignItems: 'center' 
-        }}
+          style={{
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           <ActivityIndicator size="large" color="blue" />
         </View>
